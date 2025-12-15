@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple HTML Page</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f6f8;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #2563eb;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* Card */
+    .card {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    /* Button */
+    .btn {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background-color: #1e40af;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-size: 14px;
+    }
+    </style>
+
+  <script>
+    // JavaScript Function
+    function showMessage() {
+      const message = document.getElementById("message");
+      message.innerHTML = "Button click ho gaya hai! JavaScript kaam kar rahi hai ✅";
+      message.style.color = "green";
+      message.style.marginTop = "15px";
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>My Simple Website</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="card">
+      <h2>Welcome</h2>
+      <p>
+        Yeh aik simple HTML page hai jismein CSS styling isi file ke andar add ki gayi hai.
+        Is tarah ka code university assignments aur beginners ke liye bohat useful hota hai.
+      </p>
+      <button class="btn" onclick="showMessage()">Click Me</button>
+      <div id="message"></div>
+    </div>
+
+    <div class="footer">
+      © 2025 | Created for Practice
+    </div>
+  </div>
+
+</body>
+</html>
